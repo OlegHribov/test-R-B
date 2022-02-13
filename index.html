@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Hrybov</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body class="body">
+    <div class="wrapper">
+        <form class="form">
+            <div class="radio__button">
+                    <label class="label-class" id="choise">
+                        <input type="radio" id="choice1" class="license-choice" name="license-choice" value="13">
+                        LICENSE PLAN #1 <span class="price">$13 per license</span>
+                    </label>
+                    <label class="label-class">
+                        <input type="radio" id="choice2" class="license-choice" name="license-choice" value="22">
+                        LICENSE PLAN #2 <span class="price">$22 per license</span>
+                    </label>
+                    <label class="label-class">
+                        <input type="radio" id="choice3" class="license-choice" name="license-choice" value="33" checked>
+                        LICENSE PLAN #3 <span class="price">$34 per license</span>
+                    </label>
+            </div>
+            <div class="select">
+                <hr>
+                <p class="select__text">
+                    <span class="text">Number of licenses:</span>
+                    &nbsp;
+                    <select class="nol" name="nol" id="nol">
+                        <option id="nol1" value="5">5</option>
+                        <option id="nol2"  selected value="10">10</option>
+                        <option id="nol3"  value="20">20</option>
+                    </select>
+                </p>
+                <hr>
+            </div>
+            <div class="buy-now">
+                <P class="buy-now__total">TOTAL: &nbsp;$<span class="output" id="payment"></span><sup>us</sup>
+                </P>
+                <button class="buy-now__btn" type="submit">BUY NOW</button>
+                <P class="buy-now__plan">
+                    Selected plan: #<span class="output" id="selectedPlan"></span>
+                    </P>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
